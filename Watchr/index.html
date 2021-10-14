@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="normalize" href="./assets/CSS/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <title>Movie Finder</title>
+  
+</head>
+<body>
+  <div id="header-BG"></div>
+  <header class="header block">
+    <h1 class="title">Watchr</h1>
+  </header>
+  <div class="columns is-flex">
+  <aside class="column">
+    <form  class="" aria-label="search bar" >
+      <input type="text" placeholder="Search a Movie" id="search-bar"></input>
+      <button class="button is-primary" id="submitBtn">Submit</button>
+      <i role="button" class="" id="search-button"></i>
+    </form>
+    
+    <div id="watch-list" class="slide-panel mf-border">
+      <h3>Watch List</h3>
+    </div id="add-to-watch-list">
+    <div>
+      
+    </div>
+  </aside>
+  <main class="column is-three-quarters is-gapless containter is-fluid mr-2">
+    <div class="card columns" id="title-column"></div>
+    <div class="card columns" id="info-column"></div>
+    <div class="card columns" id="overview-column"></div>
+    <div id="streaming-options"></div>
+  </main>
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/JS/script.js"></script>
+</body>
+</html>
